@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My SAS - Authentication & Business Management</title>
+    <meta name="description" content="Enterprise authentication, multi-tenant business management, security settings, and session control for Bangladesh mobile financial SMS payment automation." />
+    <meta property="og:title" content="My SAS - Authentication & Business Management" />
+    <meta property="og:description" content="Enterprise authentication, multi-tenant business management, security settings, and session control for Bangladesh mobile financial SMS payment automation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('mysas_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+          var lang = localStorage.getItem('mysas_lang') || 'en';
+          document.documentElement.setAttribute('lang', lang);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] dark:bg-[#0B1220] text-[#0F172A] dark:text-[#E5EDF9] antialiased selection:bg-[#CCFBF1] selection:text-[#0F766E] dark:selection:bg-[#134E4A] dark:selection:text-[#CCFBF1]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

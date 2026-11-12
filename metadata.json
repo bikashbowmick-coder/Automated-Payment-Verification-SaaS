@@ -1,0 +1,6 @@
+{
+  "name": "My SAS - Authentication & Business Management",
+  "description": "Enterprise authentication, multi-tenant business management, security settings, and session control for Bangladesh mobile financial SMS payment automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

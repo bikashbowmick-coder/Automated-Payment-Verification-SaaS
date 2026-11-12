@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #14595A;
+  --color-primary-hover: #114E4F;
+  --color-primary-subtle: #CCFBF1;
+  --color-accent: #4F46E5;
+  --font-sans: 'Inter', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+  --font-bengali: 'Hind Siliguri', 'Noto Sans Bengali', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --bg-app: #F8FAFC;
+  --surface-app: #FFFFFF;
+  --border-app: #E2E8F0;
+  --text-main: #0F172A;
+  --text-muted: #475569;
+  --primary-brand: #14595A;
+  --primary-brand-hover: #104849;
+  --primary-brand-subtle: #E8F5F4;
+  --accent-color: #4F46E5;
+  --focus-ring: #4F46E5;
+}
+
+.dark {
+  --bg-app: #0B1220;
+  --surface-app: #111A2E;
+  --border-app: #22304A;
+  --text-main: #E5EDF9;
+  --text-muted: #9FB0CC;
+  --primary-brand: #228486;
+  --primary-brand-hover: #299C9E;
+  --primary-brand-subtle: #0E3536;
+  --accent-color: #818CF8;
+  --focus-ring: #A5B4FC;
+}
+
+html[lang="bn"] body {
+  font-family: var(--font-bengali), var(--font-sans);
+  line-height: 1.65;
+}
+
+/* Custom focus ring styling for accessible keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
